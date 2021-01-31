@@ -11,9 +11,7 @@ import glob
 import os
 from dialogues import *
 
-
-
-user_state_base = '/Users/kowshik/KnowKowshik/USER_STATES/'
+user_state_base = '/home/kowshik123/KnowKowshik/USER_STATES/'
 '''
 deletion of all files 
 '''
@@ -30,7 +28,6 @@ def delete_user_states(user_state_base,user):
             
 user = ''
 delete_user_states(user_state_base,user)
-
 
 class DIALOGUE():
     def __init__(self, user, bot , conv, dialogues, user_state_base ):
@@ -73,11 +70,11 @@ class DIALOGUE():
         update_id,user_id,is_bot,name,chat_id,data,question_text,options,call_back_options,date = self.conv
         if self.STATE_ == 'START':
             return(data, is_bot)
-        elif self.STATE_ in ['GREET1','GREET2','GREET3','WRITINGS','PROCESS','PROFJOURN', 'PERJOURN' ,'Internships_state','Freelancing_state','Competitions_state','opensource_state' ]:
+        elif self.STATE_ in ['GREET1','GREET2','GREET3','WRITINGS','PROCESS','PROFJOURN', 'PERJOURN' ,'Internships_state','Freelancing_state','Competitions_state','opensource_state','Freelancing_state']:
             return(data,is_bot)
 
     def expected_input(self,data):
-        if self.STATE_ in ['GREET1','GREET2','GREET3','WRITINGS','PROCESS','PROFJOURN', 'PERJOURN' ,'Internships_state','Freelancing_state','Competitions_state','opensource_state']:
+        if self.STATE_ in ['GREET1','GREET2','GREET3','WRITINGS','PROCESS','PROFJOURN', 'PERJOURN' ,'Internships_state','Freelancing_state','Competitions_state','opensource_state','Freelancing_state']:
             if data in self.dialogues[self.STATE_]['acceptable']:
                 return(True)
             else:
@@ -310,7 +307,7 @@ class DIALOGUE():
                 elif data == 'Competitions':
                     self.bot.send_message(self.dialogues['PROFJOURN']['Competitions']['text1'], self.user)
                     self.bot.send_message(self.dialogues['PROFJOURN']['Competitions']['text2'], self.user)
-                    self.bot.send_markup(self.dialogues['PROFJOURN']['Competitions']['text3'], self.dialogues['PROFJOURN']['Internships']['options'], self.user)
+                    self.bot.send_markup(self.dialogues['PROFJOURN']['Competitions']['text3'], self.dialogues['PROFJOURN']['Competitions']['options'], self.user)
                     self.STATE = 'Competitions_state'
                     self.STATE_FAIL = False 
                 elif data == 'Publications/Patents':
@@ -421,22 +418,22 @@ class DIALOGUE():
             if self.expected_input(data) or self.STATE_FAIL:
                 if data == self.dialogues['PROFJOURN']['Competitions']['options'][0][0]:
                     self.bot.send_message(self.dialogues['Competitions_state']['0'], self.user)
-                    self.bot.send_markup(self.dialogues['PROFJOURN']['Competitions']['text3'], self.dialogues['PROFJOURN']['Internships']['options'], self.user)
+                    self.bot.send_markup(self.dialogues['PROFJOURN']['Competitions']['text3'], self.dialogues['PROFJOURN']['Competitions']['options'], self.user)
                     self.STATE = 'Competitions_state'
                     self.STATE_FAIL = False 
                 elif data == self.dialogues['PROFJOURN']['Competitions']['options'][1][0]:
                     self.bot.send_message(self.dialogues['Competitions_state']['1'], self.user)
-                    self.bot.send_markup(self.dialogues['PROFJOURN']['Competitions']['text3'], self.dialogues['PROFJOURN']['Internships']['options'], self.user)
+                    self.bot.send_markup(self.dialogues['PROFJOURN']['Competitions']['text3'], self.dialogues['PROFJOURN']['Competitions']['options'], self.user)
                     self.STATE = 'Competitions_state'
                     self.STATE_FAIL = False 
                 elif data == self.dialogues['PROFJOURN']['Competitions']['options'][2][0]:
                     self.bot.send_message(self.dialogues['Competitions_state']['2'], self.user)
-                    self.bot.send_markup(self.dialogues['PROFJOURN']['Competitions']['text3'], self.dialogues['PROFJOURN']['Internships']['options'], self.user)
+                    self.bot.send_markup(self.dialogues['PROFJOURN']['Competitions']['text3'], self.dialogues['PROFJOURN']['Competitions']['options'], self.user)
                     self.STATE = 'Competitions_state'
                     self.STATE_FAIL = False 
                 elif data == self.dialogues['PROFJOURN']['Competitions']['options'][3][0]:
                     self.bot.send_message(self.dialogues['Competitions_state']['3'], self.user)
-                    self.bot.send_markup(self.dialogues['PROFJOURN']['Competitions']['text3'], self.dialogues['PROFJOURN']['Internships']['options'], self.user)
+                    self.bot.send_markup(self.dialogues['PROFJOURN']['Competitions']['text3'], self.dialogues['PROFJOURN']['Competitions']['options'], self.user)
                     self.STATE = 'Competitions_state'
                     self.STATE_FAIL = False
                 elif data == self.dialogues['PROFJOURN']['Competitions']['options'][4][0]:
