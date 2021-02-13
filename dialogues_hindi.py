@@ -1,33 +1,34 @@
 
 dialogues = {}
-dialogues['reject'] = 'నేను తరువాత చూస్తాను'
+dialogues['reject'] = 'मैं बाद में देखूंगा'
 dialogues['GREET1'] = {}
 
-dialogues['GREET1']['text1'] = '<b> కౌశిక్ నుండి సందేశం: </b>\nహాయ్, నేను కౌశిక్ చిలంకుర్తి. మీ విలువైన సమయాన్ని తీసుకున్నందుకు మరియు నా వ్యక్తిగత ఏజెంట్ / బోట్ కు సందేశం పంపినందుకు ధన్యవాదాలు. నా వృత్తిపరమైన ప్రయాణం మరియు జీవితం పట్ల నా సాధారణ దృక్పథం గురించి అర్థం చేసుకోవడానికి నా బడ్డీబాట్ మీకు సహాయం చేస్తుంది.'
-dialogues['GREET1']['text2'] = 'ఇప్పుడు నేను ఈ సంభాషణను నా బడ్డీబోట్ చేద్దాం.\nగమనిక: నా బడ్డీబాట్ కొన్నిసార్లు చాలా హాస్యాస్పదంగా ఉంటుంది! మీరు ఇంకా నా బడ్డీబాయ్ తో మాట్లాడటం కొనసాగించాలనుకుంటున్నారా'
+dialogues['GREET1']['text1'] = '<b> KOWSHIK से संदेश: </b>\nहाय, मैं कौशिक चिलमूर्ति हूं। अपना बहुमूल्य समय निकालने के लिए और मेरे व्यक्तिगत एजेंट / बॉट को संदेश देने के लिए धन्यवाद। मेरे प्रोफेशनल सफर और जीवन के प्रति मेरे सामान्य दृष्टिकोण के बारे में समझने के लिए मेरा बाइटबॉट आपकी मदद करेगा।
+'
+dialogues['GREET1']['text2'] = 'अब मैं अपने बाइटबोट को इस बातचीत को संभालने दूंगा।\nध्यान दें: मेरी गर्लबेट कभी-कभी अत्यधिक विनोदी हो सकती है! क्या आप अभी भी मेरे बड्डीबॉय से बात करना जारी रखना चाहते हैं'
 
-dialogues['GREET1']['options'] =[['అవును'], ['లేదు']]
-dialogues['BYE'] = 'మీ అద్భుతమైన సమయానికి ధన్యవాదాలు, ఇంకేమైనా ప్రశ్నలకు నన్ను పింగ్ చేయండి మరియు ఏవైనా ప్రశ్నలకు kowshik: kowshikchilamkurthy@gmail.com కు మెయిల్ చేయండి.' 
-dialogues['ERROR'] = 'దయచేసి ఇచ్చిన కీబోర్డ్ లోని బటన్లను నొక్కండి'
+dialogues['GREET1']['options'] =[['हाँ'], ['नहीं न']]
+dialogues['BYE'] = 'आपके अद्भुत समय के लिए धन्यवाद, किसी भी प्रश्न के लिए मुझे पिंग करें और किसी भी प्रश्न के लिए kowshik: kowshikchilamkurthy@gmail.com मेल करें।' 
+dialogues['ERROR'] = 'कृपया दिए गए कीबोर्ड में बटन दबाएं'
 dialogues['GREET2'] = {}
-dialogues['GREET2']['text'] = 'హాస్యమా? నేను? నేను ఉండగలిగినంత మర్యాదగా ఉన్నాను. మా గురించి చాలు. మీ గురించి ఎందుకు నాకు చెప్పరు? (* ppst మీ సందేశాలన్నీ చాలా సురక్షితమైనవని మీకు చెప్పాలని అనుకున్నాను)' 
-dialogues['GREET2']['options'] =[['నేను రిక్రూటర్'], ['నేను దీన్ని తనిఖీ చేస్తున్నాను'], ['నేను సహకారం కోసం చూస్తున్నాను'], ['నేను చెప్పను']]
+dialogues['GREET2']['text'] = 'रस लेनेवाला? मुझे? मैं उतना ही विनम्र हूं जितना एक हो सकता है। हमारे बारे में पर्याप्त। आप मुझे अपने बारे में क्यों नहीं बताते। (* ppst आपको यह बताने के बारे में सोचा गया कि आपके सभी संदेश बहुत सुरक्षित हैं)' 
+dialogues['GREET2']['options'] =[['मैं रिक्रूटर हूं'], ['मैं अभी इसकी जांच कर रहा हूं'], ['मैं सहयोग की तलाश में हूं'], ['मैं नहीं बताऊंगा']]
 dialogues['GREET3'] = {}
 dialogues['GREET3'][dialogues['GREET2']['options'][0][0]] = {}
 dialogues['GREET3'][dialogues['GREET2']['options'][1][0]] = {}
 dialogues['GREET3'][dialogues['GREET2']['options'][2][0]] = {}
 dialogues['GREET3'][dialogues['GREET2']['options'][3][0]] = {}
-dialogues['GREET3'][dialogues['GREET2']['options'][0][0]]['text'] = 'హలో రిక్రూటర్, మీరు కౌషిక్ గురించి చాలా నిర్దిష్ట ప్రశ్నలు అడిగే ముందు' 
-dialogues['GREET3'][dialogues['GREET2']['options'][1][0]]['text'] = 'హాయ్, మీ ఆసక్తికి ధన్యవాదాలు. అతని ప్రొఫైల్ గురించి మీకు చాలా ప్రశ్నలు ఉన్నాయని నాకు తెలుసు, నేను త్వరలో సమాధానం ఇస్తాను.' 
-dialogues['GREET3'][dialogues['GREET2']['options'][2][0]]['text'] = 'హాయ్, మీ ఆసక్తికి ధన్యవాదాలు. అతని ప్రొఫైల్ గురించి మీకు చాలా ప్రశ్నలు ఉన్నాయని నాకు తెలుసు, నేను త్వరలో సమాధానం ఇస్తాను.' 
-dialogues['GREET3'][dialogues['GREET2']['options'][3][0]]['text'] = 'నేను మీరు అయితే నేను కూడా అదే చేస్తాను. మీ గోప్యత ఏ విధంగానూ ఉల్లంఘించబడలేదని నిర్ధారించుకోవడానికి నేను చాలా జాగ్రత్తగా రూపొందించాను :)'
-dialogues['GREET3']['text2'] = 'నేను చాలా సాధారణ ప్రశ్నతో ప్రారంభిస్తాను:\n కౌశిక్ చిలంకుర్తి ఎవరు?\n బాగా, అతను AI రంగంలో హార్డ్ వర్కింగ్ ప్రొఫెషనల్. అతను రాయడం, టెక్ ఇష్టపడతాడు మరియు అతను నన్ను సృష్టించడానికి ఒక కారణం. అతను ప్రతిష్టాత్మక ఐఐటి మద్రాస్ నుండి పట్టభద్రుడయ్యాడు మరియు ప్రస్తుతం అల్గోరిథమిక్ ట్రేడింగ్లో డేటా సైంటిస్ట్గా రీన్ఫోర్స్మెంట్ లీనింగ్లో పనిచేస్తున్నాడు. నేను రోజంతా కౌశిక్ గురించి మాట్లాడగలను. కానీ'
-dialogues['GREET3']['text3'] = 'మీరు కౌశిక్ చిలంకుర్తి గురించి మరింత తెలుసుకోవాలనుకుంటున్నారా'
-dialogues['GREET3']['options'] = [['Yes'],['Someother time']]
+dialogues['GREET3'][dialogues['GREET2']['options'][0][0]]['text'] = 'Hello recruiter, Before you ask me very specific questions about kowshik, which I really like to answer (most of the times).' 
+dialogues['GREET3'][dialogues['GREET2']['options'][1][0]]['text'] = 'नमस्ते वहाँ, आपकी रुचि के लिए धन्यवाद। मुझे पता है कि उसकी प्रोफ़ाइल के बारे में आपके पास बहुत सारे सवाल हैं जिनका मैं जल्द ही जवाब दूंगा।' 
+dialogues['GREET3'][dialogues['GREET2']['options'][2][0]]['text'] = 'नमस्ते वहाँ, आपकी रुचि के लिए धन्यवाद। मुझे पता है कि उसकी प्रोफ़ाइल के बारे में आपके पास बहुत सारे सवाल हैं जिनका मैं जल्द ही जवाब दूंगा।' 
+dialogues['GREET3'][dialogues['GREET2']['options'][3][0]]['text'] = 'अगर मैं तुम होता तो मैं भी ऐसा ही करता। मुझे यह सुनिश्चित करने के लिए बहुत सावधानी से डिज़ाइन किया गया था कि आपकी गोपनीयता किसी भी तरह से उल्लंघन नहीं है :)'
+dialogues['GREET3']['text2'] = 'मुझे केवल सबसे सामान्य प्रश्न के साथ शुरू करना चाहिए:\n कौशिक चिलमकुर्ती कौन है?\n खैर, वह एआई क्षेत्र में सिर्फ एक कठिन पेशेवर है। वह लिखना, टेक करना पसंद करते हैं और यही कारण है कि उन्होंने मुझे बनाया। उन्होंने प्रतिष्ठित आईआईटी मद्रास से स्नातक किया और वर्तमान में एल्गोरिथम ट्रेडिंग में डेटा वैज्ञानिक के रूप में रेनफोर्स लीनिंग पर काम कर रहे हैं। मैं पूरे दिन कौशिक के बारे में बोल सकता हूं। परंतु'
+dialogues['GREET3']['text3'] = 'क्या आप कौशिक चिलमकुर्ती के बारे में अधिक जानना चाहेंगे'
+dialogues['GREET3']['options'] = [['हाँ'],[dialogues['reject']]]
 
 dialogues['PROCESS'] = {}
-dialogues['PROCESS']['text'] = 'మీరు అతని గురించి తెలుసుకోవాలనుకోవడం ఏమిటి? నేను మీ ప్రశ్నలకు సమాధానం ఇవ్వడానికి ఇష్టపడతాను'
-dialogues['PROCESS']['options'] =[['నేను అతని సివిని చూద్దాం'], ['Can you point me to his writings?'], ['Would love to understand his professional journey'], ['Want to know him more than his CV']]
+dialogues['PROCESS']['text'] = 'क्या है कि आप उसके बारे में जानना पसंद करते हैं? मुझे आपके सवालों का जवाब देना अच्छा लगेगा'
+dialogues['PROCESS']['options'] =[['मुझे उसका सीवी देख लेना चाहिए'], ['क्या आप मुझे उनके लेखन की ओर इशारा कर सकते हैं?'], ['Would love to understand his professional journey'], ['Want to know him more than his CV']]
 
 dialogues['RESUME'] = {}
 dialogues['RESUME']['text'] = 'Take a look at his latest resume'
@@ -148,4 +149,5 @@ dialogues['Internships_state']['acceptable'] = ['Conduent Research Labs, Banglor
 dialogues['Competitions_state']['acceptable'] = ['EXL Excellence Quotient-2017','ZS Data-a-thon-2017', 'NASSCOM Competition-2016','Others',dialogues['reject']]
 dialogues['opensource_state']['acceptable'] = ['Reinforcement Learning Annotated Papers','Educative Bot Application',dialogues['reject']]
 dialogues['Freelancing_state']['acceptable'] = ['Prediction, NLP, Point Process Models for Unstructured News Data','Generation of 3D animations for Schrodinger Equation', 'Machine Learning and Deep Learning Models for Pixel-Wise classification','Others',dialogues['reject']]
+
 
